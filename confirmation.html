@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css1/conf.css">
+    <link rel="stylesheet" href="css1/flickity.css">
+    <link rel="stylesheet" href="css1/media.css">
+    <link rel="stylesheet" href="css1/paye.css">
+</head>
+<body>
+    <section class="Navbar-Menu" id="Navbar-Menu-Id">
+        <div class="leftside">
+            <img src="images/logo3.png" alt="logo.png">
+        </div>
+
+        <section style="padding-top: 251px;" class="second-Sec" id="Second-sec-id">
+            <div class="container">
+                <div class="row">
+                    <section class="confirmation-section">
+                        <h1 style="color: white; font-size: 50px;">Order Confirmation</h1>
+                        <br>
+                        <div id="order-details" style="color: white;">
+                            <!-- Order details will be dynamically populated here -->
+                        </div>
+                        <p style="color: white;font-size: 25px;font-style: italic;">Thank you for your order! We will process it shortly.</p>
+                        <a href="sweet.html" class="submit-button">Return to Menu</a>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <script>
+        // Retrieve order details from the URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const itemName = urlParams.get('item');
+        const quantity = urlParams.get('quantity');
+        const totalPrice = urlParams.get('total_price');
+
+        // Display order details
+        const orderDetails = document.getElementById('order-details');
+        if (itemName && quantity && totalPrice) {
+            orderDetails.innerHTML = `
+                <p style="color: white;font-size: 30px;"><strong>Item:</strong> ${itemName}</p>
+                <p style="color: white;font-size: 30px;"><strong>Quantity:</strong> ${quantity}</p>
+                <p style="color: white;font-size: 30px;"><strong>Total:</strong> $${totalPrice}</p>
+            `;
+        } else {
+            
+            orderDetails.innerHTML = `
+                <p style="color: white;font-size: 30px;"><strong>Item:</strong> ${itemName}</p>
+                <p style="color: white;font-size: 30px;"><strong>Quantity:</strong> ${quantity}</p>
+                <p style="color: white;font-size: 30px;"><strong>Total:</strong> $${totalPrice}</p>
+            `;
+        }
+    </script>
+</body>
+</html>

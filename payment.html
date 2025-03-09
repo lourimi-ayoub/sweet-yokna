@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css1/navbar.css">
+    <link rel="stylesheet" href="css1/paye.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css1/flickity.css">
+    <link rel="stylesheet" href="css1/media.css">
+    <link rel="stylesheet" href="css1/paye.css">
+
+    
+</head>
+<body>
+    <!-- ========== Start Section ========== -->
+    <section class="Navbar-Menu" id="Navbar-Menu-Id">
+        <div class="menu">
+            <div class="leftside">
+                <img src="images/logo3.png" alt="logo.png">
+            </div>
+            <div class="rightside" id="rightside">
+                <nav class="Icons">
+                    <a href="sweet.html" class="navicon">Home</a>
+                    <a href="#" class="navicon">About Us</a>
+                    <a href="#" class="navicon">Feedback</a>
+                    <a href="#" class="navicon">Contact</a>
+                    <i class="fas fa-times-circle" id="cross" onclick="Hidemenu()"></i>
+
+                    <div class="social">
+                        <li id="Border"></li>
+                        <a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" target="blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/" target="blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </nav>
+            </div>
+            <div class="menubar" >
+                <div class="line" onclick="Togglebar()"></div>
+                <div class="line" onclick="Togglebar()"></div>
+                <div class="line" onclick="Togglebar()"></div>
+            </div>
+        </div>
+    
+    <!-- ========== End Section ========== -->
+    
+    <div class="containerr mt-5">
+        <h2>Order Details</h2>
+        <form id="orderForm" action="process_order.php" method="POST">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="number" class="form-label">Phone Number:</label>
+                <input type="text" class="form-control" id="number" name="number" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="address" class="form-label">Address:</label>
+                <input type="text" class="form-control" id="address" name="address" required>
+            </div>
+            <div class="mb-3">
+                <label for="city" class="form-label">City:</label>
+                <input type="text" class="form-control" id="city" name="city" required>
+            </div>
+            <h4>Product Details</h4>
+            <p><strong>Item:</strong> <span id="itemName"></span></p>
+            <p><strong>Price per unit:</strong> $<span id="itemPrice"></span></p>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" value="1" min="1" class="form-control" required>
+            <p><strong>Total Price:</strong> $<span id="totalPrice"></span></p>
+            
+            <input type="hidden" id="item" name="item">
+            <input type="hidden" id="total_price" name="total_price">
+            
+            <button type="submit" class="btn btn-primary">Confirm Order</button>
+        </form>
+    </div>
+    
+    <section class="footer" id="footerid">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-12 mx-auto">
+                    <h3>About Us</h3>
+                    <p>Iso, Halal, & Haccap certified, approved by the Sindh Food Authority & made to the very highest standards of hygiene & healthfulness, our age-old virtues of quality & good service intact,<br><br><b>Baker's Kitchen</b> is now reinventing the art of baking with the same tender loving care that has earned us your trust.</p>
+                    <hr class="w-25 mx-auto text-dark">
+                    <a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/" target="blank"><i class="fab fa-instagram"></i></a>
+                   
+                    
+                </div>
+                <div class="col-lg-4 col-md-4 col-12 mx-auto">
+                    <h3>Contact Us</h3>
+                    <p>tunis city</p>
+                    <hr class="w-25 mx-auto text-dark">
+                    <p>Hours: Opens 6-AM To 10-PM <br>
+                        Monday to Monday <br>
+                    Phone: (+216) 12345678</p>      
+                </div>
+                <div class="col-lg-4 col-md-4 col-12 mx-auto">
+                    <h3>Location</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14485.08557107192!2d67.123408!3d24.8203909!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x23320c2fdcb48428!2sAptech%20Learning%20Korangi!5e0!3m2!1sen!2s!4v1633338566993!5m2!1sen!2s"  height="200" style="border:0;" allowfullscreen="" loading="lazy" class="container-fluid"></iframe>
+                </div>
+            </div>
+        </div>
+        <hr class="w-50 mt-5 mx-auto text-dark">
+        <div class="container last-footer" >
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-12 mx-auto Copyright">
+                    <h4 id="last-logo">sweet cake</h4>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12 mx-auto Copyright">
+                    <h4><span id="Name">lamsit yokna</span> © Privacy Policy</h4>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12 mx-auto Copyright">
+                    <h4>Design & Developed by <span id="Name"> LOURIMI </span></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const itemName = localStorage.getItem('orderItem') || 'Unknown';
+            const itemPrice = parseFloat(localStorage.getItem('orderPrice')) || 0;
+            const quantityInput = document.getElementById('quantity');
+            const totalPriceElement = document.getElementById('totalPrice');
+            const itemInput = document.getElementById('item');
+            const totalPriceInput = document.getElementById('total_price');
+            
+            document.getElementById('itemName').textContent = itemName;
+            document.getElementById('itemPrice').textContent = itemPrice.toFixed(2);
+            itemInput.value = itemName;
+            totalPriceElement.textContent = (itemPrice * quantityInput.value).toFixed(2);
+            totalPriceInput.value = (itemPrice * quantityInput.value).toFixed(2);
+            
+            quantityInput.addEventListener('input', () => {
+                const quantity = parseInt(quantityInput.value) || 1;
+                const newTotal = (itemPrice * quantity).toFixed(2);
+                totalPriceElement.textContent = newTotal;
+                totalPriceInput.value = newTotal;
+            });
+        });
+    </script>
+</body>
+</html>

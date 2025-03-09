@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+.Navbar-Menu{
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#Weight{
+    padding-left: 10px;
+}
+.menu{
+    width: 100%;
+    height: 80px;
+    position: relative;
+    top: 30px;
+    background-color: #f0f0f0;
+    box-shadow: 2px -1px 10px 2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px -1px 10px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px -1px 10px 2px rgba(0,0,0,0.75);
+}
+.leftside{
+    /* width: 10%; */
+    height: 80px;
+    position: relative;
+    float: left;     
+}
+.leftside img{
+    width: 150px;
+    height: auto;
+    position: absolute;
+    top:-30px;
+    left: 50px;
+}
+.rightside{
+    width: auto;
+    height: 80px;
+    float: right;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    justify-content: right;
+}
+.rightside a{
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.9);
+    text-decoration: none;
+    padding: 10px 10px;
+    transition: 0.5s;
+}
+.navicon:hover{
+    color:#7c4a21
+}
+.social{
+    display: inline;
+}
+.menubar{
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    opacity: 0;
+}
+.menubar .line{
+    height: 2px;
+    width: 50px;
+    background-color: black;
+    margin: 5px 0;
+    border-radius: 50px;
+    cursor: pointer;
+    
+}
+#cross{
+    font-size: 23px;
+   color: #fff;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    opacity: 0;
+}
+
+#Border{
+    padding: 13px 0;
+    display: inline;
+    border-right: 1px solid #c37a3e;
+    margin: 0 30px;
+}
+.rightside i{
+    font-size: 18px;
+}
+#Sweet-Bakery{
+    padding: 12px 20px;
+    background-color: #c37a3e;
+    color: #fff;
+    border-radius: 5px;
+
+    transition: 0.5s;
+}
+#Sweet-Bakery:hover{
+    background-color: #7c4a21;
+}
+
+
+@keyframes change{
+    0%{
+        color: #c37a3e;
+    }
+    20%{
+        color: purple;
+    }
+    40%{
+        color: yellow;
+    }
+    60%{
+        color: teal;
+    }
+    80%{
+        color: #fff;
+    }
+    100%{
+        color: #000;
+    }
+}
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: rgba(0,0,0,0.1);
+    padding: 50px 0  0 0;
+    text-align: center;
+}
+.footer h3{
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #c37a3e;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+.footer p{
+    font-size: 15px;
+    color: rgba(0,0,0,0.5);
+    font-weight: lighter;
+    padding: 0 10px;
+}
+.footer i{
+    padding: 10px;
+    font-size: 22px;
+    color: rgba(0,0,0,0.8);
+    transition: 0.6s;
+}
+.footer i:hover{
+    color: #7c4a21;
+}
+
+.Copyright h4{
+    font-size: 18px;
+    line-height: 100px;
+}
+#Name{
+    color: rgba(0,0,0,0.8);
+    font-weight: bold;
+}
+#last-logo{
+    font-size: 30px;
+    font-style: italic;
+    display: inline-block;
+    color: #c37a3e;
+    font-weight: bold;
+}
+.MenuSection{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 100px 0;
+}
+.MenuSection img{
+    height: 300px;
+    margin: 20px 0px;
+}
+.MenuSection h1{
+    font-size: 35px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #c37a3e;
+    display: inline-block;
+}
+.MenuSection p{
+    font-size: 18px;
+    color: rgba(0,0,0,0.6);
+    padding: 25px 0;   
+}
