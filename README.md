@@ -10,7 +10,7 @@
 - Fully responsive design for all devices
 
 ## Want Your Own Online Shop?
-If you like this site and would like to have a similar one created for your business, feel free to reach out! I can help you build a custom website tailored to your needs. Contact me at [your email address or contact link].
+If you like this site and would like to have a similar one created for your business, feel free to reach out! I can help you build a custom website tailored to your needs. Contact me at [ayoub.lourimi@issatso.u-sousse.tn].
 
 ## Live Demo
 You can view the live demo of the website here: [Sweet Yokna Demo](https://sweet.x10.mx/)
